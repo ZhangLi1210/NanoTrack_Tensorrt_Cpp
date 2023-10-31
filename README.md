@@ -96,7 +96,7 @@ Choose a path to open the terminal, The following commands are all executed in t
 3. ``sudo chmod 777 create_trt_engine.sh``
 
 4.  ``sudo vi create_trt_engine.sh`` change the trtexec path to yours . save and back to the terminal. **if you use Jetson with tensorrt , your  trtexec path normally in /usr/src/tensorrt/bin/trtexec**
-5. Cheate engine files from onnx files by using ``./create_trt_engine.sh`` The engine files will be saved in engine folder.
+5. Cheate engine files from onnx files by using ``./create_trt_engine.sh`` The engine files will be saved in engine folder. It will take a few minutes.
 6. Edit cmakelist.  change the OpenCV and Tensorrt path to yours.
 7. ``cd build``
 8. ``cmake ..``
