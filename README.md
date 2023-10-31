@@ -78,7 +78,8 @@ int main( int argc, char** argv ){
 **The inference of NanoTrack is totally by *CPU* when you use OpenCV SDK .** It can achieve ***40fps*** on my computer.
 Considering that it only uses CPU for inference, it will inevitably consume more CPU resources, which is not conducive to deployment in some resource limited devices.
 What's more, only OpenCV beyond 4.8.0 have method of NanoTrack. This imposes restrictions on the version of OpenCV for your project
-**Some  devices(Jetson) can use GPU for acceleration. So this repository choose to show how to deploy NanoTrack using C++ and Tensorrt.**
+
+**Some  devices(like Jetson) can use GPU for acceleration. So this repository choose to show how to deploy NanoTrack using C++ and Tensorrt.**
 
 ## 1. Requirement
 1. OpenCV
