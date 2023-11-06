@@ -9,9 +9,14 @@ set(OpenCV_DIR /home/lizhang/opencv-4.x/build)
 find_package(OpenCV)
 
 # TensorRT
-# change this dir to your tensorrt dir
+# change this dir to your tensorrt dir 
+# if you use your computer with tensorrt.include your tensorrt include and lib like this:
 set(TensorRT_INCLUDE_DIRS /home/lizhang/TensorRT-8.5.2.2/include)
 set(TensorRT_LIBRARIES /home/lizhang/TensorRT-8.5.2.2/lib)
+
+# if you use jetson with tensorrt , include your tensorrt include and lib like this:
+# include_directories(/usr/include/aarch64-linux-gnu/)
+# link_directories(/usr/lib/aarch64-linux-gnu/)
 
 #CUDA
 find_package(CUDA REQUIRED)
